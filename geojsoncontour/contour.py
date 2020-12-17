@@ -27,7 +27,7 @@ def contour_to_geojson(contour, geojson_filepath=None, min_angle_deg=None,
             properties = {
                 "stroke-width": stroke_width,
                 "stroke": rgb2hex(color[0]),
-                "title": "%.2f" % contour.levels[contour_index] + ' ' + unit,
+                "title": "%.0f" % contour.levels[contour_index] + ' ' + unit,
                 "level-value": float("%.6f" % contour.levels[contour_index]),
                 "level-index": contour_index
             }
